@@ -8,6 +8,6 @@
     }
   },
   "skills": {
-    "urls": ["https://github.com/vladchatware/soundcloud-dj-skill"]
+    "paths": ["~/Projects/soundcloud-dj-skill"]
   }
 }

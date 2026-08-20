@@ -12,7 +12,9 @@ discover → schedule → compare → commit loop.
 
 ## Install
 
-1. Add the SoundCloud MCP server and this skill to your opencode config.
+1. Clone this repo somewhere stable, e.g. `~/Projects/soundcloud-dj-skill`.
+
+2. Add the SoundCloud MCP server and the skill path to your opencode config.
    Copy `opencode.example.json` into `opencode.json` (project or global), or
    merge the two blocks manually:
 
@@ -26,7 +28,7 @@ discover → schedule → compare → commit loop.
        }
      },
      "skills": {
-       "urls": ["https://github.com/vladchatware/soundcloud-dj-skill"]
+       "paths": ["~/Projects/soundcloud-dj-skill"]
      }
    }
    ```
@@ -34,7 +36,7 @@ discover → schedule → compare → commit loop.
    For a local development instance, point the MCP URL at
    `http://localhost:3000/api/mcp` instead.
 
-2. Quit and restart opencode so the config is reloaded.
+3. Quit and restart opencode so the config is reloaded.
 
 ## Use
 
