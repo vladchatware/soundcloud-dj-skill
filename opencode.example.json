@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "soundcloud": {
+      "type": "remote",
+      "url": "https://music.vlad.chat/api/mcp",
+      "enabled": true
+    }
+  },
+  "skills": {
+    "urls": ["https://github.com/vladchatware/soundcloud-dj-skill"]
+  }
+}
