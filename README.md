@@ -28,13 +28,14 @@ discover → schedule → compare → commit loop.
        }
      },
      "skills": {
-       "paths": ["~/Projects/soundcloud-dj-skill"]
+       "paths": ["~/Projects/soundcloud-dj-skill/soundcloud-dj"]
      }
    }
    ```
 
-   For a local development instance, point the MCP URL at
-   `http://localhost:3000/api/mcp` instead.
+   The skill folder is `soundcloud-dj/` inside the repo — the skill name
+   `soundcloud-dj` must match its folder name. For a local development
+   instance, point the MCP URL at `http://localhost:3000/api/mcp` instead.
 
 3. Quit and restart opencode so the config is reloaded.
 
