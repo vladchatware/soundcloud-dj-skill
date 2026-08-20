@@ -12,11 +12,9 @@ discover → schedule → compare → commit loop.
 
 ## Install
 
-1. Clone this repo somewhere stable, e.g. `~/Projects/soundcloud-dj-skill`.
-
-2. Add the SoundCloud MCP server and the skill path to your opencode config.
-   Copy `opencode.example.json` into `opencode.json` (project or global), or
-   merge the two blocks manually:
+1. Add the SoundCloud MCP server to your opencode config. Copy
+   `opencode.example.json` into `opencode.json` (project or global), or merge
+   the `mcp` block manually:
 
    ```json
    {
@@ -26,18 +24,26 @@ discover → schedule → compare → commit loop.
          "url": "https://music.vlad.chat/api/mcp",
          "enabled": true
        }
-     },
-     "skills": {
-       "paths": ["~/Projects/soundcloud-dj-skill/soundcloud-dj"]
      }
    }
    ```
 
-   The skill folder is `soundcloud-dj/` inside the repo — the skill name
-   `soundcloud-dj` must match its folder name. For a local development
-   instance, point the MCP URL at `http://localhost:3000/api/mcp` instead.
+   For a local development instance, point the MCP URL at
+   `http://localhost:3000/api/mcp` instead.
 
-3. Quit and restart opencode so the config is reloaded.
+2. Install the skill with the skills CLI (installs for opencode automatically):
+
+   ```sh
+   bunx skills add vladchatware/soundcloud-dj-skill
+   ```
+
+   To install for every agent:
+
+   ```sh
+   bunx skills add vladchatware/soundcloud-dj-skill --all
+   ```
+
+3. Quit and restart opencode so the config and skill are loaded.
 
 ## Use
 

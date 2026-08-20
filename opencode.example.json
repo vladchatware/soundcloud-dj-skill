@@ -6,8 +6,5 @@
       "url": "https://music.vlad.chat/api/mcp",
       "enabled": true
     }
-  },
-  "skills": {
-    "paths": ["~/Projects/soundcloud-dj-skill/soundcloud-dj"]
   }
 }
